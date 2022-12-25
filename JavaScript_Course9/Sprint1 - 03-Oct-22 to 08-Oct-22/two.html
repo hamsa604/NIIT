@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+
+        console.log(x1); //undefined
+        var x1=5;
+        console.log(x1); //5
+
+        var x2=5;
+        console.log(x2); //5
+        var x2=6;
+        console.log(x2); //6
+
+        var x4=10;
+
+        {
+            var x3=7;
+            console.log(x3); //7
+            var x2=8;
+            console.log(x2); //8
+            console.log(x1); //5
+
+            var x4 = 15;
+
+            var x5 = 20;
+        }
+        console.log(x4); //10
+        console.log(x5);//reference error
+    </script>
+</body>
+</html>

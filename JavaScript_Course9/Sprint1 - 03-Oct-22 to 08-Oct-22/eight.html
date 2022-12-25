@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels to UpperCase</title>
+</head>
+<body>
+    <script>
+        const word = "a quick brown fox";
+        let outputText='';
+        for(let ch of word){
+            if(ch==='A' || ch==='e' || ch==='i' || ch==='o' || ch==='u'){
+                outputText += ch.toUpperCase();
+            }else{
+                outputText += ch.toLowerCase();
+            }
+        }
+        console.log(outputText);
+
+    </script>
+</body>
+</html>
